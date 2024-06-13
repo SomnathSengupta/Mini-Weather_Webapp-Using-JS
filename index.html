@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <link rel = "stylesheet" href = "./style.css"/>
+</head>
+<body>
+    <div class="container">
+        <div class="weather">
+            <input type = "text" placeholder = "Search" id = "search"/>
+            <button class = "sButton"><img src = "./Search.png" height="22px"/></button>
+            <center>
+                <p class = "sts">⛅</p>
+                <p class = "temp"><span id = "temp">23</span>°C</p>
+            </center>
+            <div class="extra">
+                <p><img src = "./Humidity.png" height="30px" /><span class = "humiVal">18</span>%<br/><span class = "Humidity">Humidity</span></p>
+                <p><img src = "./Wind.png" height="35px"/><span class = "winVal">6</span>m/s<br/><span class = "Wind">Wind Speed</span></p>
+            </div>
+        </div>
+    </div>
+    <script src = "/script.js"></script>
+</body>
+</html>
