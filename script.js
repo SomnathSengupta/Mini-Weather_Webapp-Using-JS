@@ -3,11 +3,11 @@ let display = document.querySelector("#search");
 let sts = document.querySelector(".sts");
 
 
-let url = `https://weather-by-api-ninjas.p.rapidapi.com/v1/weather?city=Mumbai`;
+let url = `OWN-URL`;
 let options = {
 	method: 'GET',
 	headers: {
-		'x-rapidapi-key': 'dc4fb00ab2mshbc036770c2adb05p1c69fejsn5221ca4469e7',
+		'x-rapidapi-key': 'OWN-KEY',
 		'x-rapidapi-host': 'weather-by-api-ninjas.p.rapidapi.com'
 	}
 };
@@ -18,7 +18,7 @@ let wind = document.querySelector(".winVal");
 
 let getData = async() => {
     try {
-        url = `https://weather-by-api-ninjas.p.rapidapi.com/v1/weather?city=${display.value}`;
+        url = `OWN_URL`;
         const response = await fetch(url, options);
         const result = await response.json();
         temp.innerText = result.temp;
